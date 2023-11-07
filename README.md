@@ -416,9 +416,9 @@ HTTP/1.1 200 OK
 Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
 
 **Шаги для воспроизведения:**    
-Отправить POST на добавление продуктов в набор /api/v1/kits/:id/products  
+Отправить **POST** на добавление продуктов в набор **/api/v1/kits/:id/products**  
 В URL указать id набора в дробном типе  
-Path Variables=8.0  
+**Path Variables=8.0**  
 В теле указать:  
 ```
 curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/kits/8.0/products' \
@@ -433,7 +433,7 @@ curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktiku
 }'
 ```
 **Ожидаемый результат:**  
-В ответе код и стаутус 404 Not Found, в набор продукт не добавлен
+В ответе код и стаутус 404 Not Found, в набор продукт не добавлен  
 **Фактический результат:**     
 В ответе код и статус 200 ОК, в набор продукт добавлен
 ```
