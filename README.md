@@ -408,7 +408,7 @@ HTTP/1.1 200 OK
 <details>
 <summary>ID: 683-86 </summary>
 
-### При добавлении продукта в набор, введение id набора в дробном типе - продукт добавлен, код и статус 200 ОК (ручка POST /api/v1/kits/:id/product) [683-86](https://slepsovasonya.youtrack.cloud/issue/683-86/Pri-dobavlenii-produkta-v-nabor-vvedenie-id-nabora-v-drobnom-tipe-produkt-dobavlen-kod-i-status-200-OK-ruchka-POST-api-v1-kits)
+### При добавлении продукта в набор, введение id набора в дробном типе - продукт добавлен, код и статус 200 ОК (ручка POST /api/v1/kits/:id/products) [683-86](https://slepsovasonya.youtrack.cloud/issue/683-86/Pri-dobavlenii-produkta-v-nabor-vvedenie-id-nabora-v-drobnom-tipe-produkt-dobavlen-kod-i-status-200-OK-ruchka-POST-api-v1-kits)
  
 **Окружение:**  
 Адрес сервера:  
@@ -432,6 +432,7 @@ curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktiku
     ]
 }'
 ```
+
 **Ожидаемый результат:**  
 В ответе код и стаутус 404 Not Found, в набор продукт не добавлен  
 **Фактический результат:**     
@@ -460,5 +461,651 @@ curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktiku
 ***
 </details>
 
+<details>
+<summary>ID: 683-65 </summary>
+
+###  При добавлении продукта в набор, введение id набора в вещественном типе - ошибка на стороне сервера 500 Internal Server Error (ручка POST /api/v1/kits/:id/products) [683-65](https://slepsovasonya.youtrack.cloud/issue/683-65)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **POST** на добавление продуктов в набор **/api/v1/kits/:id/products**  
+В URL указать id набора в дробном типе  
+**Path Variables=8.5**  
+В теле указать:  
+```
+curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/kits/8.5/products' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": 7,
+            "quantity": 3
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и стаутус 404 Not Found, в набор продукт не добавлен  
+**Фактический результат:**     
+В ответе ошибка на стороне сервера 500 Internal Server Error
+
+**Приоритет:**   
+Неотложная
+
+***
+</details>
+
+<details>
+<summary>ID: 683-102 </summary>
+
+###  При добавлении продукта в набор, изменение типа данных productlist на словарь - ошибка на стороне сервера 500 Internal Server Error (ручка POST /api/v1/kits/:id/products) [683-102](https://slepsovasonya.youtrack.cloud/issue/683-102)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **POST** на добавление продуктов в набор **/api/v1/kits/:id/products**  
+В URL указать существующий id набора  
+В теле поменять тип данных на словарь "productlist":  
+```
+curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/kits/8/products' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": 7,
+            "quantity": 3
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и стаутус 404 Not Found, в набор продукт не добавлен  
+**Фактический результат:**     
+В ответе ошибка на стороне сервера 500 Internal Server Error
+
+**Приоритет:**   
+Неотложная
+
+***
+</details>
+
+<details>
+<summary>ID: 683-103 </summary>
+
+###  При добавлении продукта в набор, если убрать значение и ключ productlist - ошибка на стороне сервера 500 Internal Server Error (ручка POST /api/v1/kits/:id/products) [683-103](https://slepsovasonya.youtrack.cloud/issue/683-103)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **POST** на добавление продуктов в набор **/api/v1/kits/:id/products**  
+В URL указать существующий id набора  
+В теле убрать значение и ключ "productlist":    
+```
+curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/kits/8/products' \
+--header 'Content-Type: application/json' \
+--data '{}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в набор продукт не добавлен
+**Фактический результат:**     
+В ответе ошибка на стороне сервера 500 Internal Server Error
+
+**Приоритет:**   
+Неотложная
+
+***
+</details>
+
+<details>
+<summary>ID: 683-104 </summary>
+
+###  При добавлении продукта в набор, если productlist пустой - ошибка на стороне сервера 500 Internal Server Error (ручка POST /api/v1/kits/:id/products) [683-104](https://slepsovasonya.youtrack.cloud/issue/683-104)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **POST** на добавление продуктов в набор **/api/v1/kits/:id/products**  
+В URL указать существующий id набора  
+В теле оставить пустым "productlist":     
+```
+curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/kits/8/products' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": []
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в набор продукт не добавлен
+**Фактический результат:**     
+В ответе ошибка на стороне сервера 500 Internal Server Error
+
+**Приоритет:**   
+Неотложная
+
+***
+</details>
+
+<details>
+<summary>ID: 683-106 </summary>
+
+###  При добавлении продукта в набор, если productlist пустой (null) - ошибка на стороне сервера 500 Internal Server Error (ручка POST /api/v1/kits/:id/products) [683-106](https://slepsovasonya.youtrack.cloud/issue/683-106/Pri-dobavlenii-produkta-v-nabor-esli-productlist-pustoj-null-oshibka-na-storone-servera-500-Internal-Server-Error-ruchka-POST)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **POST** на добавление продуктов в набор **/api/v1/kits/:id/products**  
+В URL указать существующий id набора  
+В теле оставить пустым "productlist": null:      
+```
+curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/kits/8/products' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": null
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в набор продукт не добавлен
+**Фактический результат:**     
+В ответе ошибка на стороне сервера 500 Internal Server Error
+
+**Приоритет:**   
+Неотложная
+
+***
+</details>
+
+<details>
+<summary>ID: 683-10 </summary>
+
+###  При добавлении в набор продукта, с НЕсуществующим id продукта - продукт добавляется без id, код и статус 200 ОК (ручка POST /api/v1/kits/:id/products) [683-10](https://slepsovasonya.youtrack.cloud/issue/683-10/Pri-dobavlenii-v-nabor-produkta-s-NEsushestvuyushim-id-produkta-produkt-dobavlyaetsya-bez-id-kod-i-status-200-OK-ruchka-POST-api)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **POST** на добавление продуктов в набор **/api/v1/kits/:id/products**  
+В URL указать существующий id набора  
+В теле указать id НЕсуществующего продукта:       
+```
+curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/kits/8/products' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": 170,
+            "quantity": 3
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в набор продукт не добавлен
+**Фактический результат:**     
+В ответе код и статус 200 ОК, несуществующий продукт добавлен в набор без id, только с количеством  
+```
+{
+    "id": 8,
+    "name": "Мой набор",
+    "productsList": [
+        {
+            "quantity": 3
+        }
+    ],
+    "productsCount": 3
+}
+```
+
+**Приоритет:**   
+Неотложная
+
+***
+</details>
+
+<details>
+<summary>ID: 683-57 </summary>
+
+###  При добавлении в набор продукта, введение id продукта как строки - продукт добавляется без id, код и статус 200 ОК (ручка POST /api/v1/kits/:id/products) [683-57](https://slepsovasonya.youtrack.cloud/issue/683-57/Pri-dobavlenii-v-nabor-produkta-vvedenie-id-produkta-kak-stroki-produkt-dobavlyaetsya-bez-id-kod-i-status-200-OK-ruchka-POST-api)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **POST** на добавление продуктов в набор **/api/v1/kits/:id/products**  
+В URL указать существующий id набора  
+В теле указать id продукта как строку:       
+```
+curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/kits/8/products' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": "7",
+            "quantity": 3
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в набор продукт не добавлен
+**Фактический результат:**     
+В ответе код и статус 200 ОК, несуществующий продукт добавлен в набор без id, только с количеством  
+```
+{
+    "id": 8,
+    "name": "Мой набор",
+    "productsList": [
+        {
+            "quantity": 3
+        }
+    ],
+    "productsCount": 3
+}
+```
+
+**Приоритет:**   
+Критическая
+
+***
+</details>
+
+<details>
+<summary>ID: 683-87 </summary>
+
+###  При добавлении в набор продукта, введение id продукта в дробном типе - продукт добавлен в набор, код и статус 200 ОК (ручка POST /api/v1/kits/:id/products) [683-87](https://slepsovasonya.youtrack.cloud/issue/683-87)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **POST** на добавление продуктов в набор **/api/v1/kits/:id/products**  
+В URL указать существующий id набора  
+В теле указать id продукта в дробном типе:        
+```
+curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/kits/8/products' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": 7.0,
+            "quantity": 3
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в набор продукт не добавлен
+**Фактический результат:**     
+В ответе код и статус 200 ОК, несуществующий продукт добавлен в набор без id, только с количеством  
+```
+{
+    "id": 8,
+    "name": "Мой набор",
+    "productsList": [
+        {
+            "id": 7,
+            "name": "Чипсы Lay's картофельные Лобстер рифленые",
+            "price": 119,
+            "weight": 150,
+            "units": "г",
+            "quantity": 3
+        }
+    ],
+    "productsCount": 3
+}
+```
+
+**Приоритет:**   
+Серьезная
+
+***
+</details>
+
+<details>
+<summary>ID: 683-56 </summary>
+
+###  При добавлении в набор продукта, введение id продукта в вещественном типе - ошибка на стороне сервера 500 Internal Server Error (ручка POST /api/v1/kits/:id/products) [683-56](https://slepsovasonya.youtrack.cloud/issue/683-56/Pri-dobavlenii-v-nabor-produkta-vvedenie-id-produkta-v-veshestvennom-tipe-oshibka-na-storone-servera-500-Internal-Server-Error)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **POST** на добавление продуктов в набор **/api/v1/kits/:id/products**  
+В URL указать существующий id набора  
+В теле указать id продукта в вещественном типе:          
+```
+curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/kits/8/products' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": 7.5,
+            "quantity": 3
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в набор продукт не добавлен
+**Фактический результат:**     
+В ответе ошибка на стороне сервера 500 Internal Server Error
+
+**Приоритет:**   
+Серьезная
+
+***
+</details>
+
+<details>
+<summary>ID: 683-58 </summary>
+
+###  При добавлении в набор продукта, введение id продукта в отрицательном типе - продукт добавляется без id, код и статус 200 ОК (ручка POST /api/v1/kits/:id/products) [683-58](https://slepsovasonya.youtrack.cloud/issue/683-58/Pri-dobavlenii-v-nabor-produkta-vvedenie-id-produkta-v-otricatelnom-tipe-produkt-dobavlyaetsya-bez-id-kod-i-status-200-OK-ruchka)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **POST** на добавление продуктов в набор **/api/v1/kits/:id/products**  
+В URL указать существующий id набора  
+В теле указать id продукта в отрицательном типе:           
+```
+curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/kits/8/products' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": -7,
+            "quantity": 3
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в набор продукт не добавлен
+**Фактический результат:**     
+В ответе код и статус 200 ОК, продукт добавлен в набор без id, только с количеством
+```
+{
+    "id": 8,
+    "name": "Мой набор",
+    "productsList": [
+        {
+            "quantity": 3
+        }
+    ],
+    "productsCount": 3
+}
+```
+
+**Приоритет:**   
+Критическая
+
+***
+</details>
+
+<details>
+<summary>ID: 683-12 </summary>
+
+###  При добавлении в набор продукта, введение id продукта в не числовом типе - ошибка на стороне сервера 500 Internal Server Error (ручка POST /api/v1/kits/:id/products) [683-12](https://slepsovasonya.youtrack.cloud/issue/683-12/Pri-dobavlenii-v-nabor-produkta-vvedenie-id-produkta-v-ne-chislovom-tipe-oshibka-na-storone-servera-500-Internal-Server-Error)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **POST** на добавление продуктов в набор **/api/v1/kits/:id/products**  
+В URL указать существующий id набора  
+В теле указать id продукта в не числовом типе:            
+```
+curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/kits/8/products' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": "%",
+            "quantity": 3
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в набор продукт не добавлен
+**Фактический результат:**     
+В ответе ошибка на стороне сервера 500 Internal Server Error  
+
+**Приоритет:**   
+Неотложная
+
+***
+</details>
+
+<details>
+<summary>ID: 683-55 </summary>
+
+###  При добавлении в набор продукта, отсутствие ключа и значения id продукта - продукт добавляется без id, код и статус 200 ОК (ручка POST /api/v1/kits/:id/products) [683-55](https://slepsovasonya.youtrack.cloud/issue/683-55/Pri-dobavlenii-v-nabor-produkta-otsutstvie-klyucha-i-znacheniya-id-produkta-produkt-dobavlyaetsya-bez-id-kod-i-status-200-OK)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **POST** на добавление продуктов в набор **/api/v1/kits/:id/products**  
+В URL указать существующий id набора  
+В теле не указать ключ и значение id продукта:             
+```
+curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/kits/8/products' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "quantity": 3
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в набор продукт не добавлен
+**Фактический результат:**     
+В ответе код и статус 200 ОК, продукт добавлен в набор без id, только с количеством
+```
+{
+    "id": 8,
+    "name": "Мой набор",
+    "productsList": [
+        {
+            "quantity": 3
+        }
+    ],
+    "productsCount": 3
+}
+```
+
+**Приоритет:**   
+Критическая
+
+***
+</details>
+
+<details>
+<summary>ID: 683-14 </summary>
+
+### При добавлении в набор продукта, пустой id продукта - ошибка на стороне сервера 500 Internal Server Error (ручка POST /api/v1/kits/:id/products) [683-14](https://slepsovasonya.youtrack.cloud/issue/683-14/Pri-dobavlenii-v-nabor-produkta-pustoj-id-produkta-oshibka-na-storone-servera-500-Internal-Server-Error-ruchka-POST-api-v1-kits)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **POST** на добавление продуктов в набор **/api/v1/kits/:id/products**  
+В URL указать существующий id набора  
+В теле не указывать id продукта:              
+```
+curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/kits/8/products' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": "",
+            "quantity": 3
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в набор продукт не добавлен
+**Фактический результат:**     
+В ответе ошибка на стороне сервера 500 Internal Server Error
+
+**Приоритет:**   
+Критическая
+
+***
+</details>
+
+<details>
+<summary>ID: 683-59 </summary>
+
+### При добавлении в набор продукта, введение id=null продукта - продукт добавляется без id, код и статус 200 ОК (ручка POST /api/v1/kits/:id/products) [683-59](https://slepsovasonya.youtrack.cloud/issue/683-59/Pri-dobavlenii-v-nabor-produkta-vvedenie-idnull-produkta-produkt-dobavlyaetsya-bez-id-kod-i-status-200-OK-ruchka-POST-api-v1)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **POST** на добавление продуктов в набор **/api/v1/kits/:id/products**  
+В URL указать существующий id набора  
+В теле указать id продукта null:                
+```
+curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/kits/8/products' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": null,
+            "quantity": 3
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в набор продукт не добавлен
+**Фактический результат:**     
+В ответе код и статус 200 ОК, продукт добавлен в набор без id, только с количеством
+```
+{
+    "id": 8,
+    "name": "Мой набор",
+    "productsList": [
+        {
+            "quantity": 3
+        }
+    ],
+    "productsCount": 3
+}
+```
+
+**Приоритет:**   
+Критическая
+
+***
+</details>
+
+<details>
+<summary>ID: 683-59 </summary>
+
+### При добавлении в набор продукта, введение id=null продукта - продукт добавляется без id, код и статус 200 ОК (ручка POST /api/v1/kits/:id/products) [683-59](https://slepsovasonya.youtrack.cloud/issue/683-59/Pri-dobavlenii-v-nabor-produkta-vvedenie-idnull-produkta-produkt-dobavlyaetsya-bez-id-kod-i-status-200-OK-ruchka-POST-api-v1)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **POST** на добавление продуктов в набор **/api/v1/kits/:id/products**  
+В URL указать существующий id набора  
+В теле указать quantity=0:                 
+```
+curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/kits/8/products' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": 7,
+            "quantity": 0
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в набор продукт не добавлен
+**Фактический результат:**     
+В ответе код 200 ОК, продукт добавлен в набор в количестве 0 штук  
+```
+{
+    "id": 8,
+    "name": "Мой набор",
+    "productsList": [
+        {
+            "id": 7,
+            "name": "Чипсы Lay's картофельные Лобстер рифленые",
+            "price": 119,
+            "weight": 150,
+            "units": "г",
+            "quantity": 0
+        }
+    ],
+    "productsCount": 0
+}
+```
+
+**Приоритет:**   
+Критическая
+
+***
+</details>
 
 </details>
