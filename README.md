@@ -559,7 +559,7 @@ curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktiku
 ```
 
 **Ожидаемый результат:**  
-В ответе код и статус 400 Bad request, в набор продукт не добавлен
+В ответе код и статус 400 Bad request, в набор продукт не добавлен  
 **Фактический результат:**       
 В ответе ошибка на стороне сервера 500 Internal Server Error
 
@@ -1477,6 +1477,249 @@ curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktiku
 
 **Приоритет:**   
 Неотложная  
+
+***
+</details>
+
+<details>
+<summary>ID: 683-22 </summary>
+
+### При запросе информации о доставке, с количеством продукта 0 - доставка рассчитывается, код и статус 200 ОК (ручка POST /fast-delivery/v3.1.1/calculate-delivery.xml) [683-22](https://slepsovasonya.youtrack.cloud/issue/683-22/Pri-zaprose-informacii-o-dostavke-s-kolichestvom-produkta-0-dostavka-rasschityvaetsya-kod-i-status-200-OK-ruchka-POST-fast)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml** 
+В теле указать productsCount=0:                      
+```
+curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/fast-delivery/v3.1.1/calculate-delivery.xml' \
+--header 'Content-Type: application/xml' \
+--data '<InputModel>
+    <productsCount>0</productsCount>
+    <productsWeight>1</productsWeight>
+    <deliveryTime>19</deliveryTime>
+</InputModel>'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, информация не получена  
+**Фактический результат:**       
+В ответе код и стаус 200 ОК, доставка рассчитана  
+```
+<response name="Привезём быстро" isItPossibleToDeliver="true" hostDeliveryCost="23" clientDeliveryCost="0">
+    <toBeDeliveredTime>
+        <min>25</min>
+        <max>30</max>
+    </toBeDeliveredTime>
+</response>
+```
+
+**Приоритет:**   
+Критическая 
+
+***
+</details>
+
+<details>
+<summary>ID: 683-66 </summary>
+
+### При запросе информации о доставке, с количеством продукта в дробном типе - доставка рассчитывается, код и статус 200 ОК (ручка POST /fast-delivery/v3.1.1/calculate-delivery.xml) [683-66](https://slepsovasonya.youtrack.cloud/issue/683-66)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**
+В теле указать productsCount=3.5:                   
+```
+curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/fast-delivery/v3.1.1/calculate-delivery.xml' \
+--header 'Content-Type: application/xml' \
+--data '<InputModel>
+    <productsCount>3.5</productsCount>
+    <productsWeight>1</productsWeight>
+    <deliveryTime>19</deliveryTime>
+</InputModel>'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, информация не получена  
+**Фактический результат:**       
+В ответе код и стаус 200 ОК, доставка рассчитана  
+```
+<response name="Привезём быстро" isItPossibleToDeliver="true" hostDeliveryCost="23" clientDeliveryCost="0">
+    <toBeDeliveredTime>
+        <min>25</min>
+        <max>30</max>
+    </toBeDeliveredTime>
+</response>
+```
+
+**Приоритет:**   
+Критическая 
+
+***
+</details>
+
+<details>
+<summary>ID: 683-67 </summary>
+
+### При запросе информации о доставке, с количеством продукта в отрицательном типе - доставка рассчитывается, код и статус 200 ОК (ручка POST /fast-delivery/v3.1.1/calculate-delivery.xml) [683-67](https://slepsovasonya.youtrack.cloud/issue/683-67)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**
+В теле указать productsCount=3:                   
+```
+curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/fast-delivery/v3.1.1/calculate-delivery.xml' \
+--header 'Content-Type: application/xml' \
+--data '<InputModel>
+    <productsCount>-3</productsCount>
+    <productsWeight>1</productsWeight>
+    <deliveryTime>19</deliveryTime>
+</InputModel>'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, информация не получена  
+**Фактический результат:**       
+В ответе код и стаус 200 ОК, доставка рассчитана  
+```
+<response name="Привезём быстро" isItPossibleToDeliver="true" hostDeliveryCost="23" clientDeliveryCost="0">
+    <toBeDeliveredTime>
+        <min>25</min>
+        <max>30</max>
+    </toBeDeliveredTime>
+</response>
+```
+
+**Приоритет:**   
+Критическая 
+
+***
+</details>
+
+<details>
+<summary>ID: 683-23 </summary>
+
+### При запросе информации о доставке, с не числовыми типом в количестве продуктов - доставка рассчитывается, код и статус 200 ОК (ручка POST /fast-delivery/v3.1.1/calculate-delivery.xml) [683-23](https://slepsovasonya.youtrack.cloud/issue/683-23/Pri-zaprose-informacii-o-dostavke-s-ne-chislovymi-tipom-v-kolichestve-produktov-dostavka-rasschityvaetsya-kod-i-status-200-OK)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**
+В теле указать:                    
+```
+curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/fast-delivery/v3.1.1/calculate-delivery.xml' \
+--header 'Content-Type: application/xml' \
+--data '<InputModel>
+    <productsCount>%</productsCount>
+    <productsWeight>1</productsWeight>
+    <deliveryTime>19</deliveryTime>
+</InputModel>'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, информация не получена  
+**Фактический результат:**       
+В ответе код и стаус 200 ОК, доставка рассчитана  
+```
+<response name="Привезём быстро" isItPossibleToDeliver="true" hostDeliveryCost="23" clientDeliveryCost="0">
+    <toBeDeliveredTime>
+        <min>25</min>
+        <max>30</max>
+    </toBeDeliveredTime>
+</response>
+```
+
+**Приоритет:**   
+Критическая 
+
+***
+</details>
+
+<details>
+<summary>ID: 683-68 </summary>
+
+### При запросе информации о доставке, если убрать <productsCount> - ошибка на стороне сервера 500 Internal Server Error (ручка POST /fast-delivery/v3.1.1/calculate-delivery.xml) [683-68](https://slepsovasonya.youtrack.cloud/issue/683-68)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**
+В теле убрать ключ и значение productsCount:                     
+```
+curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/fast-delivery/v3.1.1/calculate-delivery.xml' \
+--header 'Content-Type: application/xml' \
+--data '<InputModel>
+    <productsWeight>1</productsWeight>
+    <deliveryTime>19</deliveryTime>
+</InputModel>'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, информация не получена  
+**Фактический результат:**       
+В ответе ошибка на стороне сервера 500 Internal Server Error  
+
+**Приоритет:**   
+Неотложная
+
+***
+</details>
+
+<details>
+<summary>ID: 683-25 </summary>
+
+### При запросе информации о доставке, с пустым в количеством продуктов - доставка рассчитывается, код и статус 200 ОК (ручка POST /fast-delivery/v3.1.1/calculate-delivery.xml) [683-25](https://slepsovasonya.youtrack.cloud/issue/683-25/Pri-zaprose-informacii-o-dostavke-s-pustym-v-kolichestvom-produktov-dostavka-rasschityvaetsya-kod-i-status-200-OK-ruchka-POST)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**
+В теле оставить пустым productsCount:                      
+```
+curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/fast-delivery/v3.1.1/calculate-delivery.xml' \
+--header 'Content-Type: application/xml' \
+--data '<InputModel>
+    <productsCount/>
+    <productsWeight>1</productsWeight>
+    <deliveryTime>19</deliveryTime>
+</InputModel>
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, информация не получена  
+**Фактический результат:**       
+В ответе код и статус 200 ОК, доставка рассчитана
+```
+<response name="Привезём быстро" isItPossibleToDeliver="true" hostDeliveryCost="23" clientDeliveryCost="0">
+    <toBeDeliveredTime>
+        <min>25</min>
+        <max>30</max>
+    </toBeDeliveredTime>
+</response>
+```
+
+**Приоритет:**   
+Критическая
 
 ***
 </details>
