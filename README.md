@@ -405,4 +405,60 @@ HTTP/1.1 200 OK
 <details>
 <summary> Баг-репорты </summary>
 
+<details>
+<summary>ID: 683-86 </summary>
+
+### При добавлении продукта в набор, введение id набора в дробном типе - продукт добавлен, код и статус 200 ОК (ручка POST /api/v1/kits/:id/product) [683-86](https://slepsovasonya.youtrack.cloud/issue/683-86/Pri-dobavlenii-produkta-v-nabor-vvedenie-id-nabora-v-drobnom-tipe-produkt-dobavlen-kod-i-status-200-OK-ruchka-POST-api-v1-kits)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить POST на добавление продуктов в набор /api/v1/kits/:id/products  
+В URL указать id набора в дробном типе  
+Path Variables=8.0  
+В теле указать:  
+```
+curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/kits/8.0/products' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": 7,
+            "quantity": 3
+        }
+    ]
+}'
+```
+**Ожидаемый результат:**  
+В ответе код и стаутус 404 Not Found, в набор продукт не добавлен
+**Фактический результат:**     
+В ответе код и статус 200 ОК, в набор продукт добавлен
+```
+{
+    "id": 8,
+    "name": "Мой набор",
+    "productsList": [
+        {
+            "id": 7,
+            "name": "Чипсы Lay's картофельные Лобстер рифленые",
+            "price": 119,
+            "weight": 150,
+            "units": "г",
+            "quantity": 3
+        }
+    ],
+    "productsCount": 3
+}
+```
+
+**Приоритет:**   
+Критическая 
+
+***
+</details>
+
+
 </details>
