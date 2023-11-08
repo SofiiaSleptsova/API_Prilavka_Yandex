@@ -1496,7 +1496,7 @@ curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktiku
 Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
 
 **Шаги для воспроизведения:**    
-Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml** 
+Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**   
 В теле указать productsCount=0:                      
 ```
 curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/fast-delivery/v3.1.1/calculate-delivery.xml' \
@@ -1538,7 +1538,7 @@ curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktiku
 Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
 
 **Шаги для воспроизведения:**    
-Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**
+Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**  
 В теле указать productsCount=3.5:                   
 ```
 curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/fast-delivery/v3.1.1/calculate-delivery.xml' \
@@ -1580,7 +1580,7 @@ curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktiku
 Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
 
 **Шаги для воспроизведения:**    
-Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**
+Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**  
 В теле указать productsCount=3:                   
 ```
 curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/fast-delivery/v3.1.1/calculate-delivery.xml' \
@@ -1622,7 +1622,7 @@ curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktiku
 Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
 
 **Шаги для воспроизведения:**    
-Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**
+Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**  
 В теле указать:                    
 ```
 curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/fast-delivery/v3.1.1/calculate-delivery.xml' \
@@ -1664,7 +1664,7 @@ curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktiku
 Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
 
 **Шаги для воспроизведения:**    
-Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**
+Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**  
 В теле убрать ключ и значение productsCount:                     
 ```
 curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/fast-delivery/v3.1.1/calculate-delivery.xml' \
@@ -1697,7 +1697,7 @@ curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktiku
 Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
 
 **Шаги для воспроизведения:**    
-Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**
+Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**  
 В теле оставить пустым productsCount:                      
 ```
 curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/fast-delivery/v3.1.1/calculate-delivery.xml' \
@@ -1739,7 +1739,7 @@ curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktiku
 Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
 
 **Шаги для воспроизведения:**    
-Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**
+Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**  
 В теле указать productsWeight=0:                        
 ```
 curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/fast-delivery/v3.1.1/calculate-delivery.xml' \
@@ -1781,7 +1781,7 @@ curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktiku
 Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
 
 **Шаги для воспроизведения:**    
-Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**
+Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**  
 В теле указать productsWeight -3:                         
 ```
 curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/fast-delivery/v3.1.1/calculate-delivery.xml' \
@@ -1823,7 +1823,7 @@ curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktiku
 Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
 
 **Шаги для воспроизведения:**    
-Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**
+Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**  
 В теле указать productsWeight=%:                          
 ```
 curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/fast-delivery/v3.1.1/calculate-delivery.xml' \
@@ -1865,7 +1865,7 @@ curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktiku
 Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
 
 **Шаги для воспроизведения:**    
-Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**
+Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**  
 В теле убрать ключ и значение productsWeight:                           
 ```
 curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/fast-delivery/v3.1.1/calculate-delivery.xml' \
@@ -1898,7 +1898,7 @@ curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktiku
 Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
 
 **Шаги для воспроизведения:**    
-Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**
+Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**  
 В теле указать productsWeight оставить пустым:                          
 ```
 curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/fast-delivery/v3.1.1/calculate-delivery.xml' \
@@ -1940,7 +1940,7 @@ curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktiku
 Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
 
 **Шаги для воспроизведения:**    
-Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**
+Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**  
 В теле указать deliveryTime=23:                          
 ```
 curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/fast-delivery/v3.1.1/calculate-delivery.xml' \
@@ -1980,7 +1980,7 @@ curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktiku
 Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
 
 **Шаги для воспроизведения:**    
-Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**
+Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**  
 В теле указать deliveryTime=26:                           
 ```
 curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/fast-delivery/v3.1.1/calculate-delivery.xml' \
@@ -2017,7 +2017,7 @@ curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktiku
 Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
 
 **Шаги для воспроизведения:**    
-Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**
+Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**  
 В теле указать:                             
 ```
 curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/fast-delivery/v3.1.1/calculate-delivery.xml' \
@@ -2054,7 +2054,7 @@ curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktiku
 Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
 
 **Шаги для воспроизведения:**    
-Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**
+Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**  
 В теле указать:                             
 ```
 curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/fast-delivery/v3.1.1/calculate-delivery.xml' \
@@ -2096,7 +2096,7 @@ curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktiku
 Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
 
 **Шаги для воспроизведения:**    
-Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**
+Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**  
 В теле указать убрать ключ и значение deliveryTime:                              
 ```
 curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/fast-delivery/v3.1.1/calculate-delivery.xml' \
@@ -2129,7 +2129,7 @@ curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktiku
 Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
 
 **Шаги для воспроизведения:**    
-Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**
+Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**  
 В теле deliveryTime указать пустым:                               
 ```
 <InputModel>
@@ -2169,7 +2169,7 @@ curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktiku
 Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
 
 **Шаги для воспроизведения:**    
-Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**
+Отправить **POST** на проверку, наличия доставки курьерской службой «Привезём быстро» и получения информации о стоимости **/fast-delivery/v3.1.1/calculate-delivery.xml**    
 В теле deliveryTime указать пустым:                               
 ```
 <InputModel>
@@ -2194,6 +2194,1512 @@ curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktiku
 
 **Приоритет:**   
 Критическая
+
+***
+</details>
+
+**Работа с корзиной**
+
+<details>
+<summary>ID: 683-90 </summary>
+
+### При запросе списка продуктов в корзине, введение id корзины в дробном типе - список получен, код и статус 200 ОК (ручка GET /api/v1/orders/:id) [683-90](https://slepsovasonya.youtrack.cloud/issue/683-90)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **GET** для получение списка продуктов в корзине **/api/v1/orders/:id**  
+В URL указать id корзины в дробном типе:  
+Path Variables=2.0                             
+```
+curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/orders/2.0'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 404 Not Found, список продуктов в корзине не получен  
+**Фактический результат:**       
+В ответе код и статус 200 ОК, список продуктов в корзине получен  
+```
+[
+    {
+        "id": 1,
+        "name": "Сок Jumex апельсин без сахара",
+        "price": 149,
+        "weight": 473,
+        "units": "мл",
+        "quantity": 3
+    }
+]
+```
+
+**Приоритет:**   
+Серьезная
+
+***
+</details>
+
+<details>
+<summary>ID: 683-74 </summary>
+
+### При запросе списка продуктов в корзине, введение id корзины в вещественном типе - ошибка на стороне сервера 500 Internal Server Error (ручка GET /api/v1/orders/:id) [683-74](https://slepsovasonya.youtrack.cloud/issue/683-74)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **GET** для получение списка продуктов в корзине **/api/v1/orders/:id**  
+В URL указать id корзины в дробном типе:  
+Path Variables=2.5                               
+```
+curl --location 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/orders/2.5'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 404 Not Found, список продуктов в корзине не получен  
+**Фактический результат:**       
+В ответе ошибка на стороне сервера 500 Internal Server Error
+
+**Приоритет:**   
+Неотложная
+
+***
+</details>
+
+<details>
+<summary>ID: 683-93 </summary>
+
+### При добавлении продукта в корзину, при введении корректных значений - нарушена структура ответа, код и статус 200 ОК (ручка PUT /api/v1/orders/:id) [683-93](https://slepsovasonya.youtrack.cloud/issue/683-93)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **PUT** на добавление продуктов в корзину **/api/v1/orders/:id***  
+В URL указать   
+Path Variables=2  
+В теле указать:                                
+```
+curl --location --request PUT 'https://cf40f600-71ef-4f12-956f-9a4d03059467.serverhub.praktikum-services.ru/api/v1/orders/2' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": 7,
+            "quantity": 3
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 200 ОК, тело ответа выглядит:  
+```
+{
+"productsList": [
+    {
+        "id": 1,
+        "quantity": 3
+    },
+    {
+        "id": 7,
+        "quantity": 13
+    }
+],
+        "status": 0,
+        "deliveryPriceOur": 30,
+        "deliveryTime": "25~30",
+        "courierService": "Привезём быстро",
+        "deliveryPrice": 0,
+        "wareHouse": "Шведский дом",
+        "userId": null,
+        "id": 5,
+        "productsCost": 804,
+        "finalCCost": 804
+    }
+```
+**Фактический результат:**       
+В ответе код и статус 200 ОК, тело ответа выглядит:
+```
+{
+    "id": 2,
+    "userId": null,
+    "deliveryPrice": 0,
+    "deliveryPriceOur": 30,
+    "deliveryTime": "25~30",
+    "wareHouse": "Шведский дом",
+    "courierService": "Привезём быстро",
+    "status": 0,
+    "productsList": [
+        {
+            "id": 1,
+            "quantity": 3
+        },
+        {
+            "id": 7,
+            "quantity": 3
+        }
+    ],
+    "productsCost": 804,
+    "finalCost": 804
+}
+```
+
+**Приоритет:**   
+Обычная
+
+***
+</details>
+
+<details>
+<summary>ID: 683-75 </summary>
+
+### При добавлении продукта в корзину, введение id корзины в дробном типе - продукт добавлен в корзину, код и статус 200 ОК (запрос PUT /api/v1/orders/:id) [683-75](https://slepsovasonya.youtrack.cloud/issue/683-75/Pri-dobavlenii-produkta-v-korzinu-vvedenie-id-korziny-v-drobnom-tipe-produkt-dobavlen-v-korzinu-kod-i-status-200-OK-zapros-PUT)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **PUT** на добавление продуктов в корзину **/api/v1/orders/:id**
+В URL указать  
+Path Variables=2.0    
+В теле указать:                                
+```
+curl --location --request PUT 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/orders/2.0' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": 7,
+            "quantity": 3
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 404 Not Found, список продуктов в корзине не получен  
+**Фактический результат:**       
+В ответе код и статус 200 ОК, продукт добавлен в корзину  
+```
+{
+    "id": 2,
+    "userId": null,
+    "deliveryPrice": 0,
+    "deliveryPriceOur": 30,
+    "deliveryTime": "25~30",
+    "wareHouse": "Шведский дом",
+    "courierService": "Привезём быстро",
+    "status": 0,
+    "productsList": [
+        {
+            "id": 1,
+            "quantity": 3
+        },
+        {
+            "id": 7,
+            "quantity": 3
+        }
+    ],
+    "productsCost": 804,
+    "finalCost": 804
+}
+```
+
+**Приоритет:**   
+Критическая  
+
+***
+</details>
+
+<details>
+<summary>ID: 683-94 </summary>
+
+### При добавлении продукта в корзину, введение id корзины в вещественном типе - ошибка на стороне сервера 500 Internal Server Error (запрос PUT /api/v1/orders/:id) [683-94](https://slepsovasonya.youtrack.cloud/issue/683-94)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **PUT** на добавление продуктов в корзину **/api/v1/orders/:id**
+В URL указать  
+Path Variables=2.5      
+В теле указать:                                
+```
+curl --location --request PUT 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/orders/2.5' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": 7,
+            "quantity": 3
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 404 Not Found, список продуктов в корзине не получен  
+**Фактический результат:**       
+В ответе ошибка на стороне сервера 500 Internal Server Error  
+
+**Приоритет:**   
+Неотложная  
+
+***
+</details>
+
+<details>
+<summary>ID: 683-105 </summary>
+
+### При добавлении продукта в корзину, изменение типа данных productlist на словарь - ошибка на стороне сервера 500 Internal Server Error (ручка PUT /api/v1/orders/:id) [683-105](https://slepsovasonya.youtrack.cloud/issue/683-105)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **PUT** на добавление продуктов в корзину **/api/v1/orders/:id**  
+В URL указать существующий id корзины  
+В теле поменять тип данных "productlist" на словарь:                                
+```
+curl --location --request PUT 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/orders/2' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": {
+       "productsList1": {
+            "id": 7,
+            "quantity": 3
+        }
+    }
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в корзину продукт не добавлен  
+**Фактический результат:**       
+В ответе ошибка на стороне сервера 500 Internal Server Error  
+
+**Приоритет:**   
+Неотложная  
+
+***
+</details>
+
+<details>
+<summary>ID: 683-107 </summary>
+
+### При добавлении продукта в корзину, если убрать ключ и значение productlist - приходит список корзины, код и статус 200 ОК (ручка PUT /api/v1/orders/:id) [683-107](https://slepsovasonya.youtrack.cloud/issue/683-107)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **PUT** на добавление продуктов в корзину **/api/v1/orders/:id**  
+В URL указать существующий id корзины  
+В теле убрать ключ и значение productlist :                                
+```
+curl --location --request PUT 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/orders/2' \
+--header 'Content-Type: application/json' \
+--data '{}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в корзину продукт не добавлен  
+**Фактический результат:**       
+В ответе код и статус 200 ОК, приходит список корзины
+```
+{
+    "id": 2,
+    "userId": null,
+    "deliveryPrice": 0,
+    "deliveryPriceOur": 30,
+    "deliveryTime": "25~30",
+    "wareHouse": "Шведский дом",
+    "courierService": "Привезём быстро",
+    "status": 0,
+    "productsList": [
+        {
+            "id": 5,
+            "quantity": 1
+        }
+    ],
+    "productsCost": 349,
+    "finalCost": 349
+}
+```
+
+**Приоритет:**   
+Критическая 
+
+***
+</details>
+
+<details>
+<summary>ID: 683-108 </summary>
+
+### При добавлении продукта в корзину, если productlist пустой - приходит список корзины, код и статус 200 ОК (ручка PUT /api/v1/orders/:id) [683-108](https://slepsovasonya.youtrack.cloud/issue/683-108)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **PUT** на добавление продуктов в корзину **/api/v1/orders/:id**  
+В URL указать существующий id корзины  
+В теле productlist оставить пустым :                                
+```
+curl --location --request PUT 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/orders/2' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": []
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в корзину продукт не добавлен  
+**Фактический результат:**       
+В ответе код и статус 200 ОК, приходит список корзины  
+```
+{
+    "id": 2,
+    "userId": null,
+    "deliveryPrice": 0,
+    "deliveryPriceOur": 30,
+    "deliveryTime": "25~30",
+    "wareHouse": "Шведский дом",
+    "courierService": "Привезём быстро",
+    "status": 0,
+    "productsList": [
+        {
+            "id": 5,
+            "quantity": 1
+        }
+    ],
+    "productsCost": 349,
+    "finalCost": 349
+ }
+```
+
+**Приоритет:**   
+Критическая 
+
+***
+</details>
+
+<details>
+<summary>ID: 683-109 </summary>
+
+### При добавлении продукта в корзину, если productlist пустой (null) - приходит список корзины, код и статус 200 ОК (ручка PUT /api/v1/orders/:id) [683-109](https://slepsovasonya.youtrack.cloud/issue/683-109)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **PUT** на добавление продуктов в корзину **/api/v1/orders/:id**  
+В URL указать существующий id корзины  
+В теле productlist оставить пустым (null) :                                
+```
+curl --location --request PUT 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/orders/2' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": null
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в корзину продукт не добавлен  
+**Фактический результат:**       
+В ответе код и статус 200 ОК, приходит список корзины  
+```
+{
+    "id": 2,
+    "userId": null,
+    "deliveryPrice": 0,
+    "deliveryPriceOur": 30,
+    "deliveryTime": "25~30",
+    "wareHouse": "Шведский дом",
+    "courierService": "Привезём быстро",
+    "status": 0,
+    "productsList": [
+        {
+            "id": 5,
+            "quantity": 1
+        }
+    ],
+    "productsCost": 349,
+    "finalCost": 349
+ }
+```
+
+**Приоритет:**   
+Критическая 
+
+***
+</details>
+
+<details>
+<summary>ID: 683-93 </summary>
+
+### При добавлении продукта в корзину, при введении корректных значений - нарушена структура ответа, код и статус 200 ОК (ручка PUT /api/v1/orders/:id) [683-93](https://slepsovasonya.youtrack.cloud/issue/683-93)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **PUT** на добавление продуктов в корзину **/api/v1/orders/:id**  
+В URL указать id корзины  
+Path Variables=2  
+В теле указать:                                 
+```
+curl --location --request PUT 'https://cf40f600-71ef-4f12-956f-9a4d03059467.serverhub.praktikum-services.ru/api/v1/orders/2' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": 7,
+            "quantity": 3
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 200 ОК, тело ответа выглядит:  
+```
+{
+"productsList": [
+    {
+        "id": 1,
+        "quantity": 3
+    },
+    {
+        "id": 7,
+        "quantity": 13
+    }
+],
+        "status": 0,
+        "deliveryPriceOur": 30,
+        "deliveryTime": "25~30",
+        "courierService": "Привезём быстро",
+        "deliveryPrice": 0,
+        "wareHouse": "Шведский дом",
+        "userId": null,
+        "id": 5,
+        "productsCost": 804,
+        "finalCCost": 804
+    }
+```
+**Фактический результат:**       
+В ответе код и статус 200 ОК, тело ответа выглядит:    
+```
+{
+    "id": 2,
+    "userId": null,
+    "deliveryPrice": 0,
+    "deliveryPriceOur": 30,
+    "deliveryTime": "25~30",
+    "wareHouse": "Шведский дом",
+    "courierService": "Привезём быстро",
+    "status": 0,
+    "productsList": [
+        {
+            "id": 1,
+            "quantity": 3
+        },
+        {
+            "id": 7,
+            "quantity": 3
+        }
+    ],
+    "productsCost": 804,
+    "finalCost": 804
+}
+```
+
+**Приоритет:**   
+Обычная
+
+***
+</details>
+
+<details>
+<summary>ID: 683-76 </summary>
+
+### При добавлении продуктов в корзину, введение id продукта в виде строки - продукт добавляется в строчном значении (ручка PUT /api/v1/orders/:id) [683-76](https://slepsovasonya.youtrack.cloud/issue/683-76/Pri-dobavlenii-produktov-v-korzinu-vvedenie-id-produkta-v-vide-stroki-produkt-dobavlyaetsya-v-strochnom-znachenii-ruchka-PUT-api)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **PUT** на добавление продуктов в корзину **/api/v1/orders/:id**  
+В URL указать id существующей корзины:                                  
+```
+curl --location --request PUT 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/orders/2' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": "7",
+            "quantity": 3
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в корзину продукт не добавлен  
+**Фактический результат:**       
+В ответе код и статус 200 ОК, id продукта добавлен в строчном виде  
+```
+{
+    "id": 2,
+    "userId": null,
+    "deliveryPrice": 0,
+    "deliveryPriceOur": 31,
+    "deliveryTime": "25~30",
+    "wareHouse": "Чердак",
+    "courierService": "Привезём быстро",
+    "status": 0,
+    "productsList": [
+        {
+            "id": "7",
+            "quantity": 3
+        }
+    ],
+    "productsCost": 0,
+    "finalCost": 99
+}
+```
+
+**Приоритет:**   
+Критическая
+
+***
+</details>
+
+<details>
+<summary>ID: 683-91 </summary>
+
+### При добавлении продуктов в корзину, введение id продукта в дробном типе - продукт добавлен в корзину, код и статус 200 ОК (ручка PUT /api/v1/orders/:id) [683-91](https://slepsovasonya.youtrack.cloud/issue/683-91)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **PUT** на добавление продуктов в корзину **/api/v1/orders/:id**  
+В URL указать id существующей корзины:                                    
+```
+curl --location --request PUT 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/orders/2' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": 7.0,
+            "quantity": 3
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в корзину продукт не добавлен   
+**Фактический результат:**       
+В ответе код и статус 200 ОК, продукт добавлен в корзину   
+```
+{
+    "id": 2,
+    "userId": null,
+    "deliveryPrice": 0,
+    "deliveryPriceOur": 30,
+    "deliveryTime": "25~30",
+    "wareHouse": "Шведский дом",
+    "courierService": "Привезём быстро",
+    "status": 0,
+    "productsList": [
+        {
+            "id": 1,
+            "quantity": 3
+        },
+        {
+            "id": 7,
+            "quantity": 3
+        }
+    ],
+    "productsCost": 804,
+    "finalCost": 804
+}
+```
+
+**Приоритет:**   
+Критическая
+
+***
+</details>
+
+<details>
+<summary>ID: 683-77 </summary>
+
+### При добавлении продуктов в корзину, значение id продукта в вещественном типе - ошибка на стороне сервера 500 Internal Server Error (ручка PUT /api/v1/orders/:id) [683-77](https://slepsovasonya.youtrack.cloud/issue/683-77/Pri-dobavlenii-produktov-v-korzinu-znachenie-id-produkta-v-veshestvennom-tipe-oshibka-na-storone-servera-500-Internal-Server)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **PUT** на добавление продуктов в корзину **/api/v1/orders/:id**  
+В URL указать id существующей корзины:                                
+```
+curl --location --request PUT 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/orders/2' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": 7.5,
+            "quantity": 3
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в корзину продукт не добавлен   
+**Фактический результат:**       
+В ответе код и статус 500 Internal Server Error  
+
+**Приоритет:**   
+Неотложная  
+
+***
+</details>
+
+<details>
+<summary>ID: 683-78 </summary>
+
+### При добавлении продуктов в корзину, значение id продукта в отрицательном типе - ответ об отсутствии продукта, код и статус 409 Conflict (ручка PUT /api/v1/orders/:id) [683-78](https://slepsovasonya.youtrack.cloud/issue/683-78)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **PUT** на добавление продуктов в корзину **/api/v1/orders/:id**  
+В URL указать id существующей корзины:                                
+```
+curl --location --request PUT 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/orders/2' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": -7,
+            "quantity": 3
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в корзину продукт не добавлен   
+**Фактический результат:**       
+В ответе код и статус 409 Conflict
+```
+{
+    "code": 409,
+    "message": "Нет склада, способного обработать Ваш заказ"
+}
+```
+
+**Приоритет:**   
+Критическая
+
+***
+</details>
+
+<details>
+<summary>ID: 683-40 </summary>
+
+### При добавлении продуктов в корзину, введение id продукта в не числовом типе - ошибка на стороне сервера 500 Internal Server Error (ручка PUT /api/v1/orders/:id) (ручка PUT /api/v1/orders/:id) [683-40](https://slepsovasonya.youtrack.cloud/issue/683-40/Pri-dobavlenii-produktov-v-korzinu-vvedenie-id-produkta-v-ne-chislovom-tipe-oshibka-na-storone-servera-500-Internal-Server-Error)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **PUT** на добавление продуктов в корзину **/api/v1/orders/:id**  
+В URL указать id существующей корзины:                                
+```
+curl --location --request PUT 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/orders/2' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": "%",
+            "quantity": 3
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в корзину продукт не добавлен   
+**Фактический результат:**       
+В ответе ошибка на стороне сервера 500 Internal Server Error  
+
+**Приоритет:**   
+Неотложная
+
+***
+</details>
+
+<details>
+<summary>ID: 683-79 </summary>
+
+### При добавлении продуктов в корзину, если убрать ключ и значение id продукта - ответ об отсутствии продукта, код и статус 409 Conflict (ручка PUT /api/v1/orders/:id) [683-79](https://slepsovasonya.youtrack.cloud/issue/683-79/Pri-dobavlenii-produktov-v-korzinu-esli-ubrat-klyuch-i-znachenie-id-produkta-otvet-ob-otsutstvii-produkta-kod-i-status-409)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **PUT** на добавление продуктов в корзину **/api/v1/orders/:id**  
+В URL указать id существующей корзины:                                
+```
+curl --location --request PUT 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/orders/2' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "quantity": 3
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в корзину продукт не добавлен   
+**Фактический результат:**       
+В ответе код и статус 409 Conflict  
+```
+{
+    "code": 409,
+    "message": "Нет склада, способного обработать Ваш заказ"
+}
+```
+
+**Приоритет:**   
+Критическая
+
+***
+</details>
+
+<details>
+<summary>ID: 683-42 </summary>
+
+### При добавлении продуктов в корзину с пустым id продукта - ошибка на стороне сервера сервера 500 Internal Server Error (ручка PUT /api/v1/orders/:id) [683-42](https://slepsovasonya.youtrack.cloud/issue/683-42/Pri-dobavlenii-produktov-v-korzinu-s-pustym-id-produkta-oshibka-na-storone-servera-servera-500-Internal-Server-Error-ruchka-PUT)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **PUT** на добавление продуктов в корзину **/api/v1/orders/:id**  
+В URL указать id существующей корзины:                                
+```
+curl --location --request PUT 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/orders/2' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": "",
+            "quantity": 3
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в корзину продукт не добавлен   
+**Фактический результат:**       
+В ответе ошибка на стороне сервера 500 Internal Server Error и корректный ответ  
+
+**Приоритет:**   
+Неотложная  
+
+***
+</details>
+
+<details>
+<summary>ID: 683-80 </summary>
+
+### При добавлении продуктов в корзину, значение id=null продукта - ответ об отсутствии продукта, код и статус 409 Conflict (ручка PUT /api/v1/orders/:id) [683-80](https://slepsovasonya.youtrack.cloud/issue/683-80)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **PUT** на добавление продуктов в корзину **/api/v1/orders/:id**  
+В URL указать id существующей корзины:                                
+```
+curl --location --request PUT 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/orders/2' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": null,
+            "quantity": 3
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в корзину продукт не добавлен   
+**Фактический результат:**       
+В ответе код и статус 409 Conflict  
+```
+{
+    "code": 409,
+    "message": "Нет склада, способного обработать Ваш заказ"
+}
+```
+
+**Приоритет:**   
+Критическая 
+
+***
+</details>
+
+<details>
+<summary>ID: 683-93 </summary>
+
+### При добавлении продукта в корзину, при введении корректных значений - нарушена структура ответа, код и статус 200 ОК (ручка PUT /api/v1/orders/:id) [683-93](https://slepsovasonya.youtrack.cloud/issue/683-93)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **PUT** на добавление продуктов в корзину **/api/v1/orders/:id**  
+В URL указать id корзины  
+Path Variables=2   
+В теле указать:                                  
+```
+curl --location --request PUT 'https://cf40f600-71ef-4f12-956f-9a4d03059467.serverhub.praktikum-services.ru/api/v1/orders/2' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": 7,
+            "quantity": 3
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 200 ОК, тело ответа выглядит:  
+```
+{
+"productsList": [
+    {
+        "id": 1,
+        "quantity": 3
+    },
+    {
+        "id": 7,
+        "quantity": 13
+    }
+],
+        "status": 0,
+        "deliveryPriceOur": 30,
+        "deliveryTime": "25~30",
+        "courierService": "Привезём быстро",
+        "deliveryPrice": 0,
+        "wareHouse": "Шведский дом",
+        "userId": null,
+        "id": 5,
+        "productsCost": 804,
+        "finalCCost": 804
+    }
+```
+**Фактический результат:**       
+В ответе код и статус 200 ОК, тело ответа выглядит:  
+```
+{
+    "id": 2,
+    "userId": null,
+    "deliveryPrice": 0,
+    "deliveryPriceOur": 30,
+    "deliveryTime": "25~30",
+    "wareHouse": "Шведский дом",
+    "courierService": "Привезём быстро",
+    "status": 0,
+    "productsList": [
+        {
+            "id": 1,
+            "quantity": 3
+        },
+        {
+            "id": 7,
+            "quantity": 3
+        }
+    ],
+    "productsCost": 804,
+    "finalCost": 804
+}
+```
+
+**Приоритет:**   
+Обычная
+
+***
+</details>
+
+<details>
+<summary>ID: 683-43 </summary>
+
+### При добавлении продукта в корзину со значением quantity=0 - продукт добавляется в кол-ве 0 шт, код и статус 200 ОК (ручка PUT /api/v1/orders/:id) [683-43](https://slepsovasonya.youtrack.cloud/issue/683-43/Pri-dobavlenii-produkta-v-korzinu-so-znacheniem-quantity0-produkt-dobavlyaetsya-v-kol-ve-0-sht-kod-i-status-200-OK-ruchka-PUT)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **PUT** на добавление продуктов в корзину **/api/v1/orders/:id**  
+В URL указать id существующей корзины  
+В теле указать:                                  
+```
+curl --location --request PUT 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/orders/2' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": 4,
+            "quantity": 0
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в корзину продукт не добавлен  
+**Фактический результат:**       
+В ответе код и статус 200 ОК, продукт добавлен в корзину в кол-ве 0 штук   
+```
+{
+    "id": 2,
+    "userId": null,
+    "deliveryPrice": 0,
+    "deliveryPriceOur": 30,
+    "deliveryTime": "25~30",
+    "wareHouse": "Шведский дом",
+    "courierService": "Привезём быстро",
+    "status": 0,
+    "productsList": [
+        {
+            "id": 4,
+            "quantity": 0
+        }
+    ],
+    "productsCost": 0,
+    "finalCost": 99
+}
+```
+
+**Приоритет:**   
+Критическая
+
+***
+</details>
+
+<details>
+<summary>ID: 683-81 </summary>
+
+### При добавлении продукта в корзину, введение quantity в виде строки - продукт добавляется в строчном значении, код и статус 200 ОК (ручка PUT /api/v1/orders/:id) [683-81](https://slepsovasonya.youtrack.cloud/issue/683-81)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **PUT** на добавление продуктов в корзину **/api/v1/orders/:id**  
+В URL указать id существующей корзины  
+В теле указать:                                  
+```
+curl --location --request PUT 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/orders/2' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": 4,
+            "quantity": "1"
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в корзину продукт не добавлен  
+**Фактический результат:**       
+В ответе код 200 ОК, продукт добавляется в корзину в строчном значении   
+```
+{
+    "id": 2,
+    "userId": null,
+    "deliveryPrice": 0,
+    "deliveryPriceOur": 36,
+    "deliveryTime": "25~30",
+    "wareHouse": "Шведский дом",
+    "courierService": "Чух-чух и уже у вас",
+    "status": 0,
+    "productsList": [
+        {
+            "id": 4,
+            "quantity": "1"
+        }
+    ],
+    "productsCost": 869,
+    "finalCost": 869
+}
+```
+
+**Приоритет:**   
+Критическая
+
+***
+</details>
+
+<details>
+<summary>ID: 683-92 </summary>
+
+### При добавлении продукта в корзину, введение quantity в дробном типе - продукт в корзину добавлен, код и статус 200 ОК (ручка PUT /api/v1/orders/:id) [683-92](https://slepsovasonya.youtrack.cloud/issue/683-92)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **PUT** на добавление продуктов в корзину **/api/v1/orders/:id**  
+В URL указать id существующей корзины  
+В теле указать:                                  
+```
+curl --location --request PUT 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/orders/2' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": 4,
+            "quantity": 2.0
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в корзину продукт не добавлен  
+**Фактический результат:**       
+В ответе код и статус 200 ОК, продукт добавлен в корзину в количестве как целое число   
+```
+{
+    "id": 2,
+    "userId": null,
+    "deliveryPrice": 0,
+    "deliveryPriceOur": 30,
+    "deliveryTime": "25~30",
+    "wareHouse": "Шведский дом",
+    "courierService": "Привезём быстро",
+    "status": 0,
+    "productsList": [
+        {
+            "id": 1,
+            "quantity": 3
+        },
+        {
+            "id": 4,
+            "quantity": 2
+        }
+    ],
+    "productsCost": 605,
+    "finalCost": 605
+}
+```
+
+**Приоритет:**   
+Критическая
+
+***
+</details>
+
+<details>
+<summary>ID: 683-82 </summary>
+
+### При добавлении продукта в корзину, введение quantity продукта в вещественном типе - продукт добавляется в дробном значении (ручка PUT /api/v1/orders/:id) [683-82](https://slepsovasonya.youtrack.cloud/issue/683-82)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **PUT** на добавление продуктов в корзину **/api/v1/orders/:id**  
+В URL указать id существующей корзины  
+В теле указать:                                  
+```
+curl --location --request PUT 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/orders/2.5' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": 4,
+            "quantity": 2.5
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в корзину продукт не добавлен  
+**Фактический результат:**       
+В ответе код и статус 200 ОК, продукт добавлен в корзину в количестве дробного типа 
+```
+{
+    "id": 2,
+    "userId": null,
+    "deliveryPrice": 0,
+    "deliveryPriceOur": 30,
+    "deliveryTime": "25~30",
+    "wareHouse": "Шведский дом",
+    "courierService": "Привезём быстро",
+    "status": 0,
+    "productsList": [
+        {
+            "id": 1,
+            "quantity": 3
+        },
+        {
+            "id": 4,
+            "quantity": 2.5
+        }
+    ],
+    "productsCost": 644.5,
+    "finalCost": 644.5
+}
+```
+
+**Приоритет:**   
+Критическая
+
+***
+</details>
+
+<details>
+<summary>ID: 683-44 </summary>
+
+### При добавлении продукта в корзину, введение quantity в не числовом типе - продукт добавляется с не числовыми значениями в кол-во, ответ 200 ОК (ручка PUT /api/v1/orders/:id) [683-44](https://slepsovasonya.youtrack.cloud/issue/683-44/Pri-dobavlenii-produkta-v-korzinu-vvedenie-quantity-v-ne-chislovom-tipe-produkt-dobavlyaetsya-s-ne-chislovymi-znacheniyami-v-kol)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **PUT** на добавление продуктов в корзину **/api/v1/orders/:id**  
+В URL указать id существующей корзины  
+В теле указать:                                  
+```
+curl --location --request PUT 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/orders/2.5' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": 4,
+            "quantity": "%"
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в корзину продукт не добавлен  
+**Фактический результат:**       
+В ответе код 200 ОК, продукт добавляется в корзину с количеством, где указаны не числовые значения
+```
+{
+    "id": 2,
+    "userId": null,
+    "deliveryPrice": 0,
+    "deliveryPriceOur": 33,
+    "deliveryTime": "20~25",
+    "wareHouse": "Чердак",
+    "courierService": "На метле уюта",
+    "status": 0,
+    "productsList": [
+        {
+            "id": 4,
+            "quantity": "11%"
+        }
+    ],
+    "productsCost": 0,
+    "finalCost": 99
+}
+```
+
+**Приоритет:**   
+Критическая
+
+***
+</details>
+
+<details>
+<summary>ID: 683-83 </summary>
+
+### При добавлении продукта в корзину, если убрать ключ и значение quantity - продукт добавляется в корзину в количестве=undefianed (ручка PUT /api/v1/orders/:id) [683-83](https://slepsovasonya.youtrack.cloud/issue/683-83)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **PUT** на добавление продуктов в корзину **/api/v1/orders/:id**  
+В URL указать id существующей корзины  
+В теле указать:                                  
+```
+curl --location --request PUT ' https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/orders/2.5' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": 4,
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в корзину продукт не добавлен  
+**Фактический результат:**       
+В ответе код 200 ОК, продукт добавляется в корзину в количестве=undefined  
+```
+{
+    "id": 2,
+    "userId": null,
+    "deliveryPrice": 0,
+    "deliveryPriceOur": 33,
+    "deliveryTime": "20~25",
+    "wareHouse": "Чердак",
+    "courierService": "На метле уюта",
+    "status": 0,
+    "productsList": [
+        {
+            "id": 4,
+            "quantity": "undefined"
+        }
+    ],
+    "productsCost": 0,
+    "finalCost": 99
+}
+```
+
+**Приоритет:**   
+Критическая
+
+***
+</details>
+
+<details>
+<summary>ID: 683-46 </summary>
+
+### При добавлении продукта в корзину с пустым quantity - продукт добавляется, quantity строчным типом, код и статус 200 ОК (ручка PUT /api/v1/orders/:id) [683-46](https://slepsovasonya.youtrack.cloud/issue/683-46/Pri-dobavlenii-produkta-v-korzinu-s-pustym-quantity-produkt-dobavlyaetsya-quantity-strochnym-tipom-kod-i-status-200-OK-ruchka)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **PUT** на добавление продуктов в корзину **/api/v1/orders/:id**  
+В URL указать id существующей корзины  
+В теле указать:                                  
+```
+curl --location --request PUT 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/orders/2' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": 8,
+            "quantity": ""
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в корзину продукт не добавлен  
+**Фактический результат:**       
+В ответе код 200 ОК, продукт добавлен, quantity = ""  
+```
+{
+    "id": 2,
+    "userId": null,
+    "deliveryPrice": 0,
+    "deliveryPriceOur": 30,
+    "deliveryTime": "25~30",
+    "wareHouse": "Шведский дом",
+    "courierService": "Привезём быстро",
+    "status": 0,
+    "productsList": [
+        {
+            "id": 5,
+            "quantity": 1
+        },
+        {
+            "id": 8,
+            "quantity": ""
+        }
+    ],
+    "productsCost": 349,
+    "finalCost": 349
+}
+```
+
+**Приоритет:**   
+Критическая
+
+***
+</details>
+
+<details>
+<summary>ID: 83-84 </summary>
+
+### При добавлении продукта в корзину, с пустым значением quantity=null - продукт добавляется в количестве null, код и статус 200 ОК (ручка PUT /api/v1/orders/:id) [83-84](https://slepsovasonya.youtrack.cloud/issue/683-84)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **PUT** на добавление продуктов в корзину **/api/v1/orders/:id**  
+В URL указать id существующей корзины  
+В теле указать:                                  
+```
+curl --location --request PUT 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/orders/2' \
+--header 'Content-Type: application/json' \
+--data '{
+    "productsList": [
+        {
+            "id": 4,
+            "quantity": null
+        }
+    ]
+}'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 400 Bad request, в корзину продукт не добавлен  
+**Фактический результат:**       
+В ответе код 200 ОК, продукт добавляется в корзину в количестве = null    
+```
+{
+    "id": 2,
+    "userId": null,
+    "deliveryPrice": 0,
+    "deliveryPriceOur": 30,
+    "deliveryTime": "25~30",
+    "wareHouse": "Шведский дом",
+    "courierService": "Привезём быстро",
+    "status": 0,
+    "productsList": [
+        {
+            "id": 5,
+            "quantity": 1
+        },
+        {
+            "id": 4,
+            "quantity": null
+        }
+    ],
+    "productsCost": 349,
+    "finalCost": 349
+}
+```
+
+**Приоритет:**   
+Критическая
+
+***
+</details>
+
+<details>
+<summary>ID: 683-47 </summary>
+
+### При удалении корзины, с существующей id корзины - корзину не находит, код и статус - 404 Not Found (ручка DELETE /api/v1/orders/:id) [683-47](https://slepsovasonya.youtrack.cloud/issue/683-47/Pri-udalenii-korziny-s-sushestvuyushej-id-korziny-korzinu-ne-nahodit-kod-i-status-404-Not-Found-ruchka-DELETE-api-v1-orders-id)
+ 
+**Окружение:**  
+Адрес сервера:  
+Тестовый стенд "Яндекс.Прилавка"  
+Адрес стенда на момент тестирования: https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru  
+
+**Шаги для воспроизведения:**    
+Отправить **DELETE** на удаление корзины **/api/v1/orders/:id**   
+В URL указать id существующей корзины  
+Path Variables=2                                 
+```
+curl --location --request DELETE 'https://3d2f8dd4-7d09-4143-bbcd-f54e2d3a8ae2.serverhub.praktikum-services.ru/api/v1/orders/2'
+```
+
+**Ожидаемый результат:**  
+В ответе код и статус 200 OK, в корзина удалена  
+```
+{
+       "ok": true
+}
+```
+**Фактический результат:**       
+В ответе код и статус 404 Not Found, корзина НЕ удалилась    
+```
+{
+    "code": 404,
+    "message": "Корзина с id=2 не найдена"
+}
+```
+
+**Приоритет:**   
+Неотложная  
 
 ***
 </details>
